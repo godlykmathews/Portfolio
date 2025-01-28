@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-center">
           <div className="mb-8">
             <img
-              src="../../images/profile.jpg"
+              src="https://godlykmathews.github.io/assets/img/profile.jpg"
               alt="Godly K Mathews"
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-[#00b894]"
             />
