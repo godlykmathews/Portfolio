@@ -32,7 +32,7 @@ const About = () => {
 
           <div className="flex justify-center space-x-4 mb-8">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/godlykmathews"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-[#2d3436] text-white hover:bg-[#0984e3] transition-colors"
@@ -40,7 +40,7 @@ const About = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/godly-k-mathews"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-[#2d3436] text-white hover:bg-[#0984e3] transition-colors"
