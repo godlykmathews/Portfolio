@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'IEDC.CEK',
     description: 'Website for Innovation and Entrepreneurship Development Cell',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=300&fit=crop',
+    image: 'https://iedc-cek.vercel.app/images/iedc.cek.png',
     technologies: ['HTML5', 'CSS', 'JavaScript', 'Bootstrap'],
     liveUrl: 'https://iedc-cek.vercel.app',
     githubUrl: '#'
@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Technical HSS Puthuppally Website',
     description: 'Official website for Technical Higher Secondary School',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&h=300&fit=crop',
+    image: 'https://thssputhuppally.ihrd.ac.in/assets/img/frontbuilding.webp',
     technologies: ['HTML5', 'CSS', 'JavaScript', 'Bootstrap'],
     liveUrl: 'https://thssputhuppally.ihrd.ac.in',
     githubUrl: '#'
