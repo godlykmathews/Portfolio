@@ -5,12 +5,12 @@ const skillCategories = [
   {
     title: 'Languages',
     icon: <Code className="h-6 w-6" />,
-    skills: ['JavaScript', 'Python', 'C++', 'C', 'Java', 'HTML5', 'CSS']
+    skills: ['JavaScript', 'TypeScript', 'Python', 'C++', 'C', 'Java', 'HTML5', 'CSS']
   },
   {
     title: 'Frameworks & Libraries',
     icon: <Terminal className="h-6 w-6" />,
-    skills: ['React', 'Express', 'Node.js', 'Bootstrap', 'Handlebars']
+    skills: ['React', 'Express', 'Node.js', 'Bootstrap', 'Handlebars', 'Tailwind', 'BootStrap']
   },
   {
     title: 'Databases',

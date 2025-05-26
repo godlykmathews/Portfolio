@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+import crochemamaPng from '../../images/crochemama.png';
 
 const projects = [
   {
@@ -11,11 +12,11 @@ const projects = [
     githubUrl: '#'
   },
   {
-    title: 'IEDC.CEK',
-    description: 'Website for Innovation and Entrepreneurship Development Cell',
-    image: 'https://iedc-cek.vercel.app/images/iedc.cek.png',
-    technologies: ['HTML5', 'CSS', 'JavaScript', 'Bootstrap'],
-    liveUrl: 'https://iedc-cek.vercel.app',
+    title: 'Croche.mama Website',
+    description: 'Online Coaching & Ecom Store Website - Developed and deployed a responsive coaching and e-commerce website built for performance and maintainability.',
+    image: crochemamaPng,
+    technologies: ['React', 'Vue', 'Tailwind CSS'],
+    liveUrl: 'https://crochemama.com',
     githubUrl: '#'
   },
   {
