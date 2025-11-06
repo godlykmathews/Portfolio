@@ -17,14 +17,6 @@ const education = [
     location: "Puthuppally, Kottayam",
     period: "June 2021 - May 2023"
   },
-  {
-    degree: "Grade 10",
-    field: "Secondary Education",
-    institution: "MGM Public School",
-    university: "CBSE Delhi Board",
-    location: "Vakathanam, Kottayam",
-    period: "June 2009 - March 2021"
-  }
 ];
 
 const awards = [
