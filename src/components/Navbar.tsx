@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import resumePdf from "@/assets/Resume_Godly_K_Mathews.pdf";
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
@@ -11,6 +11,8 @@ const navItems = [
   { name: "Achievements", href: "#achievements" },
   { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
+  { name: "Resume", href: resumePdf },
+  
 ];
 
 const Navbar = () => {
@@ -37,7 +39,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#home" className="text-xl font-bold gradient-text">
-            GKM
+            Godly K Mathews
           </a>
 
           {/* Desktop Navigation */}
