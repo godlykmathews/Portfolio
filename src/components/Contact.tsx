@@ -9,20 +9,21 @@ const Contact = () => {
           <h2 className="text-4xl font-bold mb-12 text-center">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
                 <p className="text-muted-foreground mb-6">
-                  I'm always open to new opportunities and collaborations. 
-                  Feel free to reach out if you'd like to discuss a project or just say hello!
+                  I'm always open to new opportunities and collaborations. Feel
+                  free to reach out if you'd like to discuss a project or just
+                  say hello!
                 </p>
               </div>
 
               <div className="space-y-4">
-                <a 
+                <a
                   href="mailto:work.godlykm@gmail.com"
                   className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors group"
                 >
@@ -31,20 +32,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">work.godlykm@gmail.com</p>
-                  </div>
-                </a>
-
-                <a 
-                  href="tel:+919656006978"
-                  className="flex items-center gap-4 p-4 bg-card rounded-lg border border-border hover:border-primary/50 transition-colors group"
-                >
-                  <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <p className="text-sm text-muted-foreground">+91 9656006978</p>
+                    <p className="text-sm text-muted-foreground">
+                      work.godlykm@gmail.com
+                    </p>
                   </div>
                 </a>
 
@@ -54,20 +44,32 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-sm text-muted-foreground">Kottayam, Kerala, India</p>
+                    <p className="text-sm text-muted-foreground">
+                      Kottayam, Kerala, India
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div className="flex gap-4 pt-6">
                 <Button size="lg" variant="outline" className="flex-1" asChild>
-                  <a href="https://github.com/godlykmathews" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <a
+                    href="https://github.com/godlykmathews"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2"
+                  >
                     <Github className="w-5 h-5" />
                     GitHub
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" className="flex-1" asChild>
-                  <a href="https://linkedin.com/in/godly-k-mathews" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <a
+                    href="https://linkedin.com/in/godly-k-mathews"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2"
+                  >
                     <Linkedin className="w-5 h-5" />
                     LinkedIn
                   </a>
@@ -89,7 +91,12 @@ const Contact = () => {
                       work.godlykm@gmail.com
                     </a>
                   </Button>
-                  <Button variant="outline" className="w-full" size="lg" asChild>
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    size="lg"
+                    asChild
+                  >
                     <a href="mailto:godlykmathews@outlook.com">
                       <Mail className="w-4 h-4 mr-2" />
                       godlykmathews@outlook.com
