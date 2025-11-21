@@ -66,7 +66,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-border bg-black">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
