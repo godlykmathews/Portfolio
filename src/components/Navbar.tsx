@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import resumePdf from "@/assets/Godly_K_Mathews_Resume.pdf";
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
@@ -11,7 +10,7 @@ const navItems = [
   { name: "Achievements", href: "#achievements" },
   { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
-  { name: "Resume", href: resumePdf },
+  { name: "Resume", href: "/resume" },
   
 ];
 

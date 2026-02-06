@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileDown } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import resumePdf from "@/assets/Godly_K_Mathews_Resume.pdf";
 
 const Hero = () => {
   return (
@@ -52,7 +51,7 @@ const Hero = () => {
             </Button>
             <Button size="lg" variant="outline" className="group">
               <a
-                href={resumePdf}
+                href="/resume"
                 download="Resume_Godly_K_Mathews.pdf"
                 className="flex items-center gap-2"
               >
