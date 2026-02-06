@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileDown } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import resumePdf from "@/assets/Resume_Godly_K_Mathews.pdf";
+import resumePdf from "@/assets/Godly_K_Mathews_Resume.pdf";
 
 const Hero = () => {
   return (

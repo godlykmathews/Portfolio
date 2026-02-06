@@ -6,7 +6,7 @@ const projects = [
     title: "Park Avail",
     description: "Full-stack parking space finder with real-time availability detection. Mobile app & website built with React and React Native, Node.js backend with MongoDB, Firebase authentication, and AI-powered hardware integration.",
     technologies: ["React", "React Native", "Node.js", "MongoDB", "Firebase", "AI"],
-    period: "Oct 2024 - Present",
+    period: "Oct 2024",
     role: "Full Stack Developer"
   },
   {
@@ -21,27 +21,24 @@ const projects = [
     title: "Croche.mama",
     description: "Responsive coaching and e-commerce website combining online learning with product sales. Built for performance and maintainability.",
     technologies: ["React", "Vue", "Tailwind CSS"],
-    period: "March 2025",
+    period: "March 2025 - Feb 2026",
     role: "Web Developer"
   },
+  {
+    title: "Technical HSS Puthuppally Website",
+    description: "Official website for Technical HSS Puthuppally, showcasing school information, events, and resources. Developed with a focus on accessibility and user experience.",
+    technologies: ["Node.js", "Bootstrap", "Handlebars"],
+    period: "Jan 2023",
+    role: "Developer",
+    link: "https://thssputhuppally.ihrd.ac.in/"
+  }
+  ,
   {
     title: "Methane Emission Story",
     description: "Educational website utilizing NASA Global Data API to raise awareness about methane's environmental impact. Created for NASA Space Apps Hackathon with interactive features.",
     technologies: ["React", "NASA API", "Data Visualization"],
     period: "Oct 2024",
     role: "Website Developer"
-  },
-  {
-    title: "Cybernix",
-    description: "Modern web application showcasing advanced UI/UX design and functionality.",
-    technologies: ["React", "Tailwind CSS", "Node.js"],
-    link: "https://cybernix.in"
-  },
-  {
-    title: "IEDC CEK",
-    description: "Innovation and Entrepreneurship Development Cell website for College of Engineering Kallooppara.",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    link: "https://iedc-cek.vercel.app"
   }
 ];
 

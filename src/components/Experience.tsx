@@ -5,7 +5,7 @@ const experiences = [
     title: "Developer Intern",
     company: "Thinkvyne Digital",
     location: "Kochi, Kerala",
-    period: "June 2025 - Present",
+    period: "June 2025 - Dec 2025",
     description: [
       "Developing the product's front-end using React and Tailwind CSS to create an intuitive and responsive user interface",
       "Integrating the front-end with a Laravel-based back-end, ensuring efficient data flow and high-performance functionality"
@@ -15,7 +15,7 @@ const experiences = [
     title: "Freelance Web Developer",
     company: "Coxdo Solutions",
     location: "Kerala, India",
-    period: "Sep 2024 - April 2025",
+    period: "Sep 2024 - Present",
     description: [
       "Designed and developed responsive websites that improved client visibility and engagement",
       "Website Development for clients using React and Tailwind CSS, delivering scalable and high-performance applications",

@@ -10,31 +10,32 @@ const About = () => {
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
               Hello! I'm <span className="text-foreground font-semibold">Godly K Mathews</span>, 
-              a passionate full-stack developer from Kerala, India, currently pursuing B.Tech in Computer Science 
-              at College of Engineering, Kallooppara under APJ Abdul Kalam Technological University.
+              a passionate full-stack developer from Kerala, India, currently pursuing a B.Tech in Computer Science 
+              at the College of Engineering, Kallooppara under APJ Abdul Kalam Technological University.
             </p>
             
             <p>
-              I specialize in building modern web applications with a focus on <span className="text-primary font-medium">
-              scalability and performance</span>. My expertise spans across front-end development with React and 
-              React Native, back-end services with Node.js and Express, and database management with MongoDB and MySQL.
+              I specialize in building modern, scalable web applications with a strong focus on <span className="text-primary font-medium">performance and clean user experience</span>. My core expertise includes front-end development with React and 
+              React Native, back-end development using Node.js and Express, and database management with MongoDB and MySQL.
             </p>
             
             <p>
-              Currently working as a <span className="text-foreground font-semibold">Developer Intern at Thinkvyne Digital</span>, 
-              I'm developing intuitive user interfaces with React and Tailwind CSS while integrating with Laravel-based backends. 
-              Previously, I worked as a freelance web developer at Coxdo Solutions, delivering scalable and high-performance applications.
+              I previously worked as a <span className="text-foreground font-semibold">Developer Intern at Thinkvyne Digital</span>, 
+              where I built intuitive user interfaces using React and Tailwind CSS while integrating Laravel-based backend systems.
             </p>
 
             <p>
-              I have a keen interest in <span className="text-primary font-medium">AI and machine learning</span>, 
-              and I'm always exploring emerging technologies to solve real-world problems. When I'm not coding, 
-              I enjoy watching sci-fi movies, experimenting with cooking, and spending quality time with family and friends.
+              I am currently working as a freelance web developer with <span className="text-foreground font-semibold">Coxdo.in</span>, 
+              delivering scalable, production-ready web solutions and handling end-to-end feature development.
             </p>
 
-            <blockquote className="border-l-4 border-primary pl-6 italic text-foreground mt-8">
-              "First, solve the problem. Then, write the code." - John Johnson
-            </blockquote>
+            <p>
+              Alongside client work, I continuously explore new technologies — especially in <span className="text-primary font-medium">AI, machine learning, and modern web architecture</span> — to expand my problem-solving toolkit and stay aligned with industry evolution.
+            </p>
+
+            <p>
+              Beyond coding, I enjoy sci-fi movies, experimenting with cooking, and spending quality time with family and friends.
+            </p>
           </div>
         </div>
       </div>
