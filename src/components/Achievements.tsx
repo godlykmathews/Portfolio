@@ -33,6 +33,25 @@ const contributions = [
   },
 ];
 
+const hackathons = [
+  {
+    name: "Google Physical AI Hackathon at TinkerSpace Kochi",
+    award: "Best Use of Gemma Award",
+  },
+  {
+    name: "Google Build with AI Alappuzha Edition at CEC",
+    award: "Best Creative Project Award",
+  },
+  {
+    name: "Oasis Ghosted Hackathon - Tech4Good Community",
+    award: "Winner",
+  },
+  {
+    name: "Build for Thrissur at GECT",
+    award: "Software Catogory Winner",
+  },
+];
+
 const Achievements = () => {
   return (
     <section id="achievements" className="py-20 bg-secondary/50">
@@ -50,16 +69,17 @@ const Achievements = () => {
                 Hackathon Wins
               </h3>
               <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 mt-1">&#10003;</span>
-                  <span>
-                    Winner of{" "}
-                    <span className="font-medium text-foreground">
-                      Build for Thrissur
-                    </span>{" "}
-                    hackathon.
-                  </span>
-                </li>
+                {hackathons.map((hackathon, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-primary mr-2 mt-1">&#10003;</span>
+                    <span>
+                      <span className="font-medium text-foreground">
+                        {hackathon.name}
+                      </span>{" "}
+                      — {hackathon.award}
+                    </span>
+                  </li>
+                ))}
               </ul>
             </div>
 
