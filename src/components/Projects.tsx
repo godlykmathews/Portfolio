@@ -2,14 +2,18 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
-  {
-  "title": "Driver Delivery App",
-  "description": "Your description here.",
-  "technologies": ["React Native", "Node.js", "API"],
-  "period": "Month Year",
-  "role": "Developer",
-  "link": "https://github.com/godlykmathews/your-repo-link"
-  },
+ {
+  "title": "Digital Delivery Management System",
+  "description": "Co-developed a real-time delivery system that reduced paper-based processes by 80% in live operations. Engineered a Flutter driver app with offline-first synchronization and digital proof of delivery, alongside a React admin dashboard for invoice management, driver assignments, and GPS tracking.",
+  "technologies": [
+    "Flutter",
+    "React",
+    "GPS Tracking",
+    "Server Deployment"
+  ],
+  "period": "2026",
+  "role": "Co-developer"
+},
   {
     title: "Park Avail",
     description: "Full-stack parking space finder with real-time availability detection. Mobile app & website built with React and React Native, Node.js backend with MongoDB, Firebase authentication, and AI-powered hardware integration.",
