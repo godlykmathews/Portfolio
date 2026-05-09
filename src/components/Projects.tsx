@@ -10,6 +10,35 @@ const projects = [
     role: "Full Stack Developer"
   },
   {
+    title: "Smart Agriculture System",
+    description: "Edge AI monitoring pipeline running on a Raspberry Pi 5 and ESP32 for real-time crop disease detection and targeted automated pesticide spraying directly in the field.",
+    technologies: ["Raspberry Pi", "ESP32", "Python", "IoT", "Edge AI"],
+    period: "May 2026",
+    role: "Hardware & AI Developer"
+  },
+  {
+    title: "Prabhatha Vachanam",
+    description: "A cross-platform mobile application delivering daily morning Bible verses to users, featuring a clean, intuitive, and spiritually uplifting user interface.",
+    technologies: ["Flutter", "Dart", "Mobile Development"],
+    role: "Mobile Developer",
+    link: "https://github.com/godlykmathews/prabhatha-vachanam"
+  },
+  {
+    title: "Daily Bible Verse API",
+    description: "A RESTful API service designed to reliably serve daily Bible verses to client applications.",
+    technologies: ["Node.js", "REST API", "Backend"],
+    role: "Backend Developer",
+    link: "https://github.com/godlykmathews/Daily-BibleVerse-API"
+  },
+  {
+    title: "Vite-FOSS-Paint",
+    description: "A lightweight, high-performance, and Free and Open-Source (FOSS) web-based painting application packaged as an Electron desktop app.",
+    technologies: ["React", "Vite", "Electron"],
+    period: "Dec 2025",
+    role: "Developer",
+    link: "https://github.com/godlykmathews/Vite-FOSS-Paint"
+  },
+  {
     title: "Run All Apps",
     description: "VS Code extension with one-click status bar buttons for running development commands. Configurable JSON settings for flexible command management across multiple frameworks.",
     technologies: ["TypeScript", "VS Code API", "JSON"],
@@ -31,8 +60,7 @@ const projects = [
     period: "Jan 2023",
     role: "Developer",
     link: "https://thssputhuppally.ihrd.ac.in/"
-  }
-  ,
+  },
   {
     title: "Methane Emission Story",
     description: "Educational website utilizing NASA Global Data API to raise awareness about methane's environmental impact. Created for NASA Space Apps Hackathon with interactive features.",
@@ -90,8 +118,13 @@ const Projects = () => {
                   <div className="flex gap-2 mt-auto">
                     <Button size="sm" variant="outline" className="flex-1" asChild>
                       <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
-                        <ExternalLink className="w-3 h-3" />
-                        View
+                        {/* Dynamically show GitHub icon if it's a repo, otherwise show ExternalLink */}
+                        {project.link.includes('github.com') ? (
+                          <Github className="w-4 h-4" />
+                        ) : (
+                          <ExternalLink className="w-4 h-4" />
+                        )}
+                        {project.link.includes('github.com') ? 'GitHub' : 'View'}
                       </a>
                     </Button>
                   </div>
