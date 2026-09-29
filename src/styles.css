@@ -15,6 +15,7 @@ main {
   margin: 24px 0 48px 13.25%;
   overflow-wrap: break-word;
 }
+main:focus { outline: none; }
 
 h1, h2, h3 {
   color: #181818;

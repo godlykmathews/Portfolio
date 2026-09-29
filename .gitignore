@@ -3,3 +3,7 @@
 .idea/
 .vscode/
 *.sw?
+
+# Dependencies and build output
+node_modules/
+dist/

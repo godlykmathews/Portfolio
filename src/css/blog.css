@@ -12,6 +12,7 @@
 .post-header { margin-bottom: 28px; }
 .post-header h1 { margin-bottom: 10px; }
 .post-header .post-date { display: block; }
+.post-tags { margin: 8px 0 0; color: #666; font-size: 15px; }
 .post-body { margin-top: 0; }
 .post-body h2 { margin-top: 32px; }
 .post-body img { max-width: 100%; height: auto; }
@@ -30,3 +31,19 @@
   color: #666;
 }
 .post-body blockquote p:last-child { margin-bottom: 0; }
+.post-body ol { margin: 0 0 20px; padding-left: 24px; }
+.post-body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 0 20px;
+  border-collapse: collapse;
+}
+.post-body th, .post-body td {
+  padding: 8px 12px;
+  border: 1px solid #e8e8e8;
+  text-align: left;
+}
+.post-body hr { margin: 28px 0; border: 0; border-top: 1px solid #e8e8e8; }
+.post-body details { margin-bottom: 20px; }
+.post-body summary { margin-bottom: 12px; cursor: pointer; }
