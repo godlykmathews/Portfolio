@@ -1,0 +1,32 @@
+.post-list { margin: 28px 0 20px; padding: 0; list-style: none; }
+.post-list li {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 20px;
+  align-items: baseline;
+}
+.post-list li + li { margin-top: 24px; }
+.post-date { color: #666; font-size: 15px; }
+.post-title { margin: 0 0 6px; font-size: 18px; }
+.post-summary { margin: 6px 0 0; }
+.post-header { margin-bottom: 28px; }
+.post-header h1 { margin-bottom: 10px; }
+.post-header .post-date { display: block; }
+.post-body { margin-top: 0; }
+.post-body h2 { margin-top: 32px; }
+.post-body img { max-width: 100%; height: auto; }
+.post-body code { font-family: ui-monospace, monospace; font-size: 0.9em; }
+.post-body pre {
+  margin: 0 0 20px;
+  padding: 16px;
+  overflow-x: auto;
+  border: 1px solid #e8e8e8;
+  line-height: 1.5;
+}
+.post-body blockquote {
+  margin: 0 0 20px;
+  padding-left: 20px;
+  border-left: 2px solid #ddd;
+  color: #666;
+}
+.post-body blockquote p:last-child { margin-bottom: 0; }
