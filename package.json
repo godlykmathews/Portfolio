@@ -7,12 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "check:build": "node scripts/verify-build.mjs"
   },
   "engines": {
     "node": ">=22.12.0"
   },
   "dependencies": {
+    "@fontsource/dm-sans": "5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "react-router": "^8.4.0"
