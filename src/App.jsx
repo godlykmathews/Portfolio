@@ -131,7 +131,7 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Godly K Mathews</span>
-        <span>Built with care in Kerala.</span>
+        <span>Built with care.</span>
         <a href="#main">Back to top ↑</a>
       </div>
     </footer>
