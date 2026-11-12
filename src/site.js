@@ -1,79 +1,21 @@
 export const siteUrl = "https://godlykmathews.tech";
+
 export const pages = [
   {
-    path: "/",
-    name: "Home",
-    title: "Godly K Mathews — Developer",
-    component: "Home",
-    legacy: "/index.html",
-    description:
-      "Godly K Mathews, a developer and Computer Science student from Kerala. Projects, experience, and FOSS contributions.",
+    path: "/", name: "Home", title: "Godly K Mathews — Developer", component: "Home", legacy: "/index.html",
+    description: "Selected software projects and technical notes by Godly K Mathews.",
   },
   {
-    path: "/about",
-    name: "About",
-    component: "About",
-    description:
-      "About Godly K Mathews, a developer and Computer Science student from Kottayam, Kerala.",
+    path: "/projects", name: "Work", component: "Projects",
+    description: "Web applications, mobile apps, and developer tools by Godly K Mathews.",
   },
   {
-    path: "/experience",
-    name: "Experience",
-    component: "Experience",
-    description:
-      "Internships and freelance web development work by Godly K Mathews.",
+    path: "/blog", name: "Writing", component: "Blog", legacy: "/blog/index.html",
+    description: "Notes on building software, document AI, and open source.",
   },
   {
-    path: "/projects",
-    name: "Projects",
-    component: "Projects",
-    description:
-      "Selected applications and developer tools built by Godly K Mathews.",
-  },
-  {
-    path: "/skills",
-    name: "Skills",
-    component: "Skills",
-    description: "Languages, frameworks, and tools used by Godly K Mathews.",
-  },
-  {
-    path: "/open-source",
-    name: "FOSS",
-    component: "OpenSource",
-    description:
-      "Free and open-source software contributions by Godly K Mathews.",
-  },
-  {
-    path: "/achievements",
-    name: "Achievements",
-    component: "Achievements",
-    description: "Hackathon and project awards received by Godly K Mathews.",
-  },
-  {
-    path: "/education",
-    name: "Education",
-    component: "Education",
-    description: "Education and coursework of Godly K Mathews.",
-  },
-  {
-    path: "/blog",
-    name: "Blog",
-    component: "Blog",
-    legacy: "/blog/index.html",
-    description: "Notes and project updates by Godly K Mathews.",
-  },
-  {
-    path: "/contact",
-    name: "Contact",
-    component: "Contact",
-    description: "Contact Godly K Mathews by email, GitHub, or LinkedIn.",
-  },
-  {
-    path: "/resume",
-    name: "Résumé",
-    component: "Resume",
-    legacy: "/resume/index.html",
-    description: "Read or download the résumé of Godly K Mathews.",
+    path: "/about", name: "About", component: "About",
+    description: "A short introduction to Godly K Mathews’s development work.",
   },
 ].map((page) => ({
   ...page,
@@ -94,10 +36,8 @@ export function getAllPages(posts) {
 }
 
 export function entryPaths(page) {
-  return [
-    ...new Set([
-      page.path === "/" ? "/index.html" : `${page.path}/index.html`,
-      page.legacy,
-    ]),
-  ];
+  return [...new Set([
+    page.path === "/" ? "/index.html" : `${page.path}/index.html`,
+    page.legacy,
+  ])];
 }

@@ -98,7 +98,12 @@ export default defineConfig({
         }
         const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${allPages.map((page) => `<url><loc>${siteUrl}${page.path}</loc></url>`).join("")}</urlset>`;
         await writeFile(resolve(outDir, "sitemap.xml"), sitemap);
-        await writeFile(resolve(outDir, "404.html"), template);
+        await writeFile(
+          resolve(outDir, "404.html"),
+          template
+            .replace(/<title>.*?<\/title>/, "<title>Page not found — Godly K Mathews</title>")
+            .replace('name="robots" content="index, follow"', 'name="robots" content="noindex"'),
+        );
         await writeFile(resolve(outDir, "blog/feed.xml"), rss(posts));
       },
     },

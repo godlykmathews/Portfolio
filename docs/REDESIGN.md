@@ -1,43 +1,25 @@
-# Portfolio redesign — November 2026
+# Minimal portfolio — November 2026
 
-## Goal
+## Design
 
-Make Godly's work easy to scan, with a distinct, restrained visual identity and accurate project attribution. Keep the existing React/Vite architecture, blog pipeline, résumé, and direct/legacy links.
+A narrow reading column, warm off-white background, muted green accent, self-hosted DM Sans, and fine separators. Navigation is limited to Work, Writing, and About. The home page introduces the work, highlights three projects, and links to a technical note. All six existing projects remain accessible, with optional contribution details.
 
-## Research and decisions
+No photographs, project screenshots, decorative image panels, contact pitches, résumé pages, or long biographical sections. Project roles remain accurately attributed in contribution descriptions.
 
-Reviewed on 10 November 2026:
+## Privacy scope
 
-- [Brittany Chiang](https://brittanychiang.com/): clear role, experience, and selected-project descriptions. Adopt the emphasis on evidence and readable hierarchy, with an original layout and palette.
-- [Emil Kowalski](https://emilkowal.ski/): focused project and writing indexes. Prefer concise navigation and purposeful interactions.
-- [WCAG 2.2 quick reference](https://www.w3.org/WAI/WCAG22/quickref/): keyboard access, focus visibility, contrast, reflow, and target size informed implementation. This is not a claim of complete WCAG conformance.
+Removed personal images, direct contact information, location references, education and employment history, awards, and the public résumé download. The former personal article is replaced with a technical project note. Public image and PDF files are removed from source rather than merely unlinked. Metadata, RSS, and sitemap generation use the reduced route registry.
 
-The visual system uses warm paper, dark ink, rust accents, Instrument Serif display type, and DM Sans body text. Numbered project entries, fine rules, real screenshots, and generous space establish hierarchy. Motion is limited to short hover transitions and smooth anchor scrolling; reduced-motion preferences disable both. No animation framework or third-party tracking was added.
+The portfolio retains the display name, professional project descriptions, and public GitHub links. It does not anonymize the owner or alter external profiles. Git history is not rewritten.
 
-## Content boundaries
+## Verification
 
-The owner confirmed all six existing projects and requested Karyadhyaksha first. No project from unrelated chat history was added. Haajar is excluded. `we-care-pets-website` was reviewed as an optional candidate and is not included pending explicit confirmation.
+Run `npm test`, `npm run build`, and `npm run check:build`. The build check validates generated routes and metadata, scans every text artifact for removed personal details, and rejects retired downloads and route documents.
 
-Karyadhyaksha is identified as an internship prototype, with its remaining evaluation and production work stated. Team-project roles remain explicit. The old delivery impact numbers were omitted from the redesign because this review did not independently verify them. Other existing education, award, and employment information was retained; it was not independently fact-checked during this design task.
+Keyboard focus, skip navigation, native disclosure controls, and reduced-motion preferences are supported. Check desktop and narrow viewport layouts before release.
 
-## Assets
+Local validation: all 11 existing tests, the production build, and the build verification pass. Eight entry documents, five sitemap URLs, RSS, and all bundled text artifacts were checked. Desktop home and project views were visually inspected. Browser tooling stalled when switching to responsive emulation, so mobile visual checks and a full interaction audit remain unverified.
 
-- Portrait: the owner's public GitHub avatar, retrieved from `https://avatars.githubusercontent.com/u/97968185?v=4`.
-- Karyadhyaksha screenshots: `screenshots/voice-assistant.png` and `screenshots/chat-interface.png` from [the project repository](https://github.com/godlykmathews/karyadhyaksha-rag-assistant), commit `01e781412bca11a562505e0198f2515e28c6e6c3`. Original bytes are retained; these are repository screenshots, not generated product mockups.
-- Fonts: Fontsource Instrument Serif and DM Sans, OFL-1.1, installed at exact package versions.
-- The existing résumé PDF is unchanged. It still contains the earlier `godly.is-a.dev` address; updating that document is outside this visual redesign.
+## Release
 
-## Validation
-
-- `npm test`: 11 existing blog parsing/sanitization tests pass.
-- `npm run build`: production build passes.
-- `npm run check:build`: verifies all 21 generated entry documents, 12 sitemap URLs, canonical and Open Graph URLs, RSS, résumé, and local images.
-- Browser checks cover navigation, route headings and metadata, project order, legacy URL query/hash preservation, lazy-loaded blog content, expandable screenshot evidence, résumé rendering, and copy-email success feedback.
-- Responsive checks use a same-origin local iframe at 320px, 390px, and 768px. This tests layout reflow, not a physical phone or mobile browser engine. Home, about, and project screens fit without horizontal overflow. Menu opening, Escape dismissal, and closing after route changes work.
-- The responsive test harness is local and excluded from Git; it is not part of the production build.
-
-## Limits and next improvements
-
-- No Lighthouse score, field Core Web Vitals, full assistive-technology audit, Safari/iOS run, or real-device performance result is claimed.
-- Other projects would benefit from owner-approved screenshots and fuller case studies. Only Karyadhyaksha has visual evidence in this iteration.
-- No PR, merge, or production deployment is performed before design approval. The feature branch is the review candidate.
+These are local repository changes. Deploy the complete new output to the existing host, removing previous artifacts and invalidating cached copies of retired files. Updating source alone does not remove previously deployed files, search-engine copies, or Git history.

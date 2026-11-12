@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import { posts } from "../posts.js";
-import { Arrow, SectionHeading } from "../components/UI.jsx";
+import { Arrow } from "../components/UI.jsx";
 
 const publishedPosts = posts;
 const formatDate = (date) =>
@@ -35,23 +35,12 @@ function PostList({ items }) {
 export function LatestPosts() {
   if (!publishedPosts.length) return null;
   return (
-    <section className="writing-section" aria-labelledby="writing-heading">
-      <SectionHeading
-        number="03"
-        label="Field notes"
-        title={
-          <span id="writing-heading">
-            Learning, out <em>loud.</em>
-          </span>
-        }
-        to="/blog"
-        linkText="All writing"
-      />
+    <section className="home-section writing-section" aria-labelledby="writing-heading">
+      <div className="section-heading">
+        <h2 id="writing-heading">Writing</h2>
+        <Link className="text-link quiet-link" to="/blog">All notes <Arrow /></Link>
+      </div>
       <PostList items={publishedPosts.slice(0, 1)} />
-      <a className="text-link rss-link" href="/blog/feed.xml">
-        Subscribe via RSS
-        <Arrow />
-      </a>
     </section>
   );
 }
@@ -63,23 +52,18 @@ export function Blog() {
   return (
     <>
       <div className="page-heading">
-        <p className="eyebrow">Writing / Field notes</p>
+        <p className="eyebrow">Notes</p>
         <h1>
-          Things I’m
-          <br />
-          <em>figuring out.</em>
+          Writing.
         </h1>
         <p className="lead">
-          Notes from projects, internships, and the process of learning to build
-          better software.
+          Notes on building software and what I learn along the way.
         </p>
       </div>
-      <p>
-        <a href="/blog/feed.xml">Subscribe via RSS</a>.
-      </p>
+      <a className="text-link rss-link" href="/blog/feed.xml">RSS feed <Arrow /></a>
       {years.length ? (
         years.map((year) => (
-          <section key={year} aria-labelledby={`year-${year}`}>
+          <section className="writing-year" key={year} aria-labelledby={`year-${year}`}>
             <h2 id={`year-${year}`}>{year}</h2>
             <PostList
               items={publishedPosts.filter((post) =>
@@ -100,12 +84,12 @@ export function BlogPost() {
   const post = publishedPosts.find((item) => item.slug === slug);
   if (!post)
     return (
-      <>
-        <h1>Post not found</h1>
+      <div className="page-heading not-found">
+        <h1>Post not found.</h1>
         <p>
-          <Link to="/blog">Back to the blog</Link>.
+          <Link className="text-link" to="/blog">Back to writing <Arrow /></Link>
         </p>
-      </>
+      </div>
     );
   return (
     <article className="post-body">
@@ -119,9 +103,7 @@ export function BlogPost() {
         )}
       </header>
       <PostContent key={post.slug} load={post.load} />
-      <p>
-        <Link to="/blog">All posts</Link>
-      </p>
+      <Link className="text-link" to="/blog">All notes <Arrow /></Link>
     </article>
   );
 }
